@@ -21,7 +21,7 @@
             console.error('ad not ad id');
             return;
         }
-        js.src = 'http://www.example.com?w=' + w + '&h=' + h + '&id=' + id + '&callback=ad.' + id;
+        js.src = 'http://www.example.com/ad_server?w=' + w + '&h=' + h + '&id=' + id + '&callback=ad.' + id;
         ad[id] = function (data) {
             if (!document.querySelector('#ad-unit-' + data.id)) {
                 console.error('ad id error');
